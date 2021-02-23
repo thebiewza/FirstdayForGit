@@ -67,13 +67,13 @@ namespace OperatersHW
                 Console.Write("Input your Password in 6 digit : ");
                 n = int.Parse(Console.ReadLine());
                 
-                if (n/100000 == 4 || n / 100000 == 5 || n / 100000 == 6 || n / 100000 == 7)
+                if (n/100000 >= 4 && n / 100000 <= 7 )
                 {
                     if (((n / 100) % 10) % 2 == 0 && ((n / 100) % 10) != 6)
                     {
                         if (((n / 10000) % 10) % 2 == 1)
                         {
-                            Console.WriteLine("Y");
+                            Console.WriteLine("True");
                         }
                         else
                         {
